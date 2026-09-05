@@ -9,3 +9,14 @@ collections:
     label: Pages
     files:
       - { name: home, label: Home, file: src/index.njk, fields: [ { name: body, label: Content, widget: code } ] }
+      - name: nextconf
+        label: Next conference
+        file: src/_data/nextconf.json
+        fields:
+          - { name: title, label: Title }
+          - { name: dates, label: Dates }
+          - { name: venue, label: Venue }
+          - { name: theme, label: Theme, required: false }
+          - { name: status, label: Status line, widget: text }
+          - { name: registerUrl, label: Registration URL (blank shows "Ask to be notified"), required: false }
+          - { name: speakers, label: Speakers, widget: list, field: { name: s, label: Speaker }, required: false }

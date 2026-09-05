@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: Orientale Lumen XXXI
+permalink: /orientale-lumen-xxxi/
+description: "The thirty-first Orientale Lumen Conference, summer 2027, Washington, DC. Dates, theme, speakers, and registration."
+---
+<div class="wrap page-head"><p class="kicker">The next conference</p><h1>{{ nextconf.title }}</h1><p class="lede">{{ nextconf.dates }} · {{ nextconf.venue }}{% if nextconf.theme %} · “{{ nextconf.theme }}”{% endif %}</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap two-col top">
+    <div class="prose">
+      <p class="dropcap">Since 1997 the Orientale Lumen Conferences have brought Eastern Orthodox, Eastern Catholic, and Roman Catholic Christians into one room for several days of lectures, panels, shared prayer, and meals. The thirty-first conference follows the thirtieth, at which Cardinal Seán O'Malley, Archbishop Flavio Pace, Metropolitan Tikhon, Bishop Anthony Vrame, and Bishop John Michael Botean gathered at the Saint John Paul II Shrine in Washington.</p>
+      <p>{{ nextconf.status }}</p>
+      {% if nextconf.speakers.length %}<h2>Speakers</h2><ul>{% for s in nextconf.speakers %}<li>{{ s }}</li>{% endfor %}</ul>{% endif %}
+      <h2>How it works</h2>
+      <p>Three days. Plenary lectures each morning, afternoon, and evening, each followed by a panel discussion and questions from the floor. Non-eucharistic prayer services of the Eastern traditions throughout. Registration covers the sessions; overnight accommodation at the retreat house is offered separately at a discounted rate.</p>
+      <p>Clergy, faculty, and students receive discounted registration. Students of Washington Theological Consortium schools attend free.</p>
+      <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem">
+        {% if nextconf.registerUrl %}<a class="btn" href="{{ nextconf.registerUrl }}">Register</a>{% else %}<a class="btn" href="mailto:{{ site.email }}?subject=Orientale%20Lumen%20XXXI">Ask to be notified</a>{% endif %}
+        <a class="btn ghost" href="/conferences/">The thirtieth conference</a>
+      </div>
+    </div>
+    <aside>
+      <img src="/images/olxxx-hero-panel.jpg" alt="The panel at Orientale Lumen XXX" style="width:100%;aspect-ratio:4/3;object-fit:cover" loading="lazy">
+      <p class="caption">Orientale Lumen XXX, July 2026: Cardinal O'Malley, Metropolitan Tikhon, Archbishop Pace, Bishop Vrame, Bishop Botean.</p>
+      <div class="facts" style="margin-top:1.5rem">
+        <dl>
+          <dt>When</dt><dd>{{ nextconf.dates }}</dd>
+          <dt>Where</dt><dd>{{ nextconf.venue }}</dd>
+          <dt>Presented with</dt><dd>Washington Theological Consortium; Huffington Ecumenical Institute; Likoudis Legacy Foundation</dd>
+          <dt>Questions</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a> · {{ site.phone }}</dd>
+        </dl>
+      </div>
+    </aside>
+  </div>
+</section>
+{% include "partners.njk" %}
