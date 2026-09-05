@@ -31,3 +31,14 @@ description: "Eastern Christian Publications, Fairfax, Virginia: books on the Ea
     </div>
   </div>
 </section>
+
+<section class="band white">
+  <div class="wrap">
+    <div class="band-head"><h2>Ecumenism from the catalog</h2><a class="textlink" href="{{ site.ecpubs }}/product-category/ecumenism/">All ecumenism titles →</a></div>
+    <div class="books catalog">
+    {%- for b in ecpubsBooks %}
+      <a href="{{ b.url }}"><img src="{{ b.cover }}" alt="" loading="lazy"><p class="t">{{ b.title }}</p><p class="m">{% if b.by.length %}{{ b.by[0] }} · {% endif %}{{ b.price }}</p></a>
+    {%- endfor %}
+    </div>
+  </div>
+</section>

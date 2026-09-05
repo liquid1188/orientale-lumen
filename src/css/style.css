@@ -213,3 +213,4 @@ figcaption, .caption { font-size: .92rem; color: var(--ink-2); margin-top: .6rem
 .partners-row img { height: 56px; width: auto; }
 .partners-row span { font-family: var(--display); font-size: 1.25rem; line-height: 1.15; }
 .partners-row small { display: block; font-family: var(--body); font-size: .8rem; color: var(--ink-2); margin-top: .2rem; }
+.books.catalog { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.6rem 1.2rem; }
