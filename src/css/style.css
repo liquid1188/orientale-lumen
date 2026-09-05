@@ -206,3 +206,10 @@ figcaption, .caption { font-size: .92rem; color: var(--ink-2); margin-top: .6rem
 .quote-full { font-family: var(--display); font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.45; max-width: 46rem; margin: 0 0 .8rem; }
 .quote-full + .meta { margin: 0; }
 .press-item .quote-full { font-size: 1.2rem; }
+.partners { background: var(--ivory-2); border-bottom: 1px solid var(--rule); padding: 2rem 0; }
+.partners .label { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 1.2rem; font-weight: 600; }
+.partners-row { display: flex; align-items: center; gap: clamp(2rem, 5vw, 4.5rem); flex-wrap: wrap; }
+.partners-row a { display: flex; align-items: center; gap: .9rem; text-decoration: none; color: inherit; }
+.partners-row img { height: 56px; width: auto; }
+.partners-row span { font-family: var(--display); font-size: 1.25rem; line-height: 1.15; }
+.partners-row small { display: block; font-family: var(--body); font-size: .8rem; color: var(--ink-2); margin-top: .2rem; }
