@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: Contact
+permalink: /contact/
+description: "Contact the Orientale Lumen Foundation in Fairfax, Virginia."
+---
+<div class="wrap page-head"><h1>Contact</h1><p class="lede">Questions about the conference, the pilgrimage, recordings, or starting a Society chapter. Call {{ site.phone }} or write below.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap two-col top">
+    <form class="form" action="https://formsubmit.co/{{ site.email }}" method="POST">
+      <input type="hidden" name="_subject" value="Message from olfoundation.net">
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>About <select name="topic"><option>Orientale Lumen XXX</option><option>Light of the East 5 pilgrimage</option><option>Recordings or an order</option><option>Society of St. John Chrysostom</option><option>Eastern Christian Publications</option><option>A gift</option><option>Something else</option></select></label>
+      <label>Message <textarea name="message" rows="6" required></textarea></label>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <div class="facts">
+      <dl>
+        <dt>Office</dt><dd>Orientale Lumen Foundation, Fairfax, Virginia</dd>
+        <dt>Phone</dt><dd>{{ site.phone }}</dd>
+        <dt>Publications</dt><dd><a href="{{ site.ecpubs }}">ecpubs.com</a></dd>
+        <dt>Video</dt><dd><a href="{{ site.youtube }}">YouTube</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+backend:
+  name: github
+  repo: liquid1188/orientale-lumen
+  branch: main
+media_folder: src/images
+public_folder: /images
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - { name: home, label: Home, file: src/index.njk, fields: [ { name: body, label: Content, widget: code } ] }
