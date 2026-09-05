@@ -191,11 +191,12 @@ figcaption, .caption { font-size: .92rem; color: var(--ink-2); margin-top: .6rem
 @media (max-width: 520px) { .foot-grid { grid-template-columns: 1fr; } }
 
 /* About: audiences and books */
-.audiences { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; margin-top: 1.5rem; }
+.audiences { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.2rem; margin-top: 1.5rem; }
 .audiences figure { margin: 0; }
 .audiences img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--ivory-2); }
 .audiences figcaption { font-size: .85rem; color: var(--ink-2); margin-top: .5rem; line-height: 1.4; }
 @media (max-width: 800px) { .audiences { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 801px) and (max-width: 1100px) { .audiences { grid-template-columns: repeat(3, 1fr); } }
 .signature { height: 54px; width: auto; margin: 1.5rem 0 0; opacity: .85; }
 .books { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem; }
 .books a { text-decoration: none; color: inherit; }
