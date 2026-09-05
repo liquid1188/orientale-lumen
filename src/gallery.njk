@@ -1,0 +1,14 @@
+---
+layout: base.njk
+title: Gallery
+permalink: /gallery/
+description: "Thirty years of Orientale Lumen in photographs: conferences, pilgrimages, audiences with popes and patriarchs."
+---
+<div class="wrap page-head"><p class="kicker">Thirty years in pictures</p><h1>Gallery</h1><p class="lede">Conferences in Washington, San Diego, Detroit, and Constantinople; pilgrimages to Rome and the Phanar; the people who kept coming back.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap gallery-grid">
+  {%- for g in gallery %}
+    <figure><a href="{{ g.src }}"><img src="{{ g.src }}" alt="{{ g.cap }}" width="{{ g.w }}" height="{{ g.h }}" loading="lazy"></a><figcaption>{{ g.cap }}</figcaption></figure>
+  {%- endfor %}
+  </div>
+</section>
