@@ -270,3 +270,4 @@ figcaption, .caption { font-size: .92rem; color: var(--ink-2); margin-top: .6rem
 .site-foot.v2 { --foot-accent: var(--gold-2); --foot-bg: var(--night); }
 .site-foot.v2 .fcol a.soc { display: inline-flex; align-items: center; justify-content: center; padding: 0; width: 38px; height: 38px; }
 .site-foot.v2 .fcol a.soc svg { width: 18px; height: 18px; display: block; }
+.quote-light cite { color: var(--ink-2); }
