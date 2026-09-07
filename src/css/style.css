@@ -274,3 +274,10 @@ figcaption, .caption { font-size: .92rem; color: var(--ink-2); margin-top: .6rem
 .quote-light cite { color: var(--ink-2); }
 .site-foot.v2 .util a.totop { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; }
 .site-foot.v2 .util a.totop svg { width: 16px; height: 16px; display: block; }
+
+/* Press row alone, quieter than the old awards band */
+.recog.press-only { padding: 1.1rem 0; }
+.recog.press-only .recog-press { margin-top: 0; padding-top: 0; border-top: 0; justify-content: center; gap: 2.4rem; }
+.recog.press-only .recog-press img { height: 20px; filter: grayscale(1); opacity: .55; transition: opacity .2s, filter .2s; }
+.recog.press-only .recog-press a:hover img { filter: none; opacity: 1; }
+.recog.press-only .label { color: var(--ink-3, #888); font-weight: 500; }
